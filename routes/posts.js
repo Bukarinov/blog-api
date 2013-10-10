@@ -30,7 +30,7 @@ function PostsHandler(app, db) {
                 return res.json({error: err});
             }
 
-            db.all("SELECT * FROM comments WHERE post_id = $postId", {
+            db.all("SELECT * FROM comments WHERE postId = $postId", {
                 $postId: req.params.id
             }, function(err, comments) {
                 if (err) {

@@ -5,7 +5,8 @@ First install all dependacies
 ``` bash
 npm install
 ```
-And run server
+Then run server
 ``` bash
 node app.js
 ```
+

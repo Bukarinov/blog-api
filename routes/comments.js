@@ -10,7 +10,7 @@ function CommentsHandler(app, db) {
     });
 
     app.post('/comments', function(req, res) {
-        db.run("INSERT INTO comments (post_id, text) VALUES ($postId, $text)", {
+        db.run("INSERT INTO comments (postId, text) VALUES ($postId, $text)", {
             $postId: req.body.postId,
             $text: req.body.text
         }, function(err) {
@@ -35,7 +35,7 @@ function CommentsHandler(app, db) {
     });
 
     app.put('/comments/:id', function (req, res) {
-        db.run("UPDATE comments SET post_id = $postId, text = $text WHERE id = $id", {
+        db.run("UPDATE comments SET postId = $postId, text = $text WHERE id = $id", {
             $id: req.params.id,
             $postId: req.body.postId,
             $text: req.body.text
