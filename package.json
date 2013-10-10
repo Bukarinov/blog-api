@@ -1,0 +1,18 @@
+{
+    "name": "blog-api",
+    "version": "0.1.0",
+    "description": "New Blog",
+    "main": "app.js",
+    "dependencies": {
+        "express": ">=3.x",
+        "sqlite3": "~2.1.17"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "",
+    "author": "Bukarinov Nikolay <bukarinov@gmail.com>",
+    "license": "BSD",
+    "private": true
+}
