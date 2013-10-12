@@ -1,12 +1,14 @@
-REST API for sample blog
-========
+# REST API for sample blog
 
-First install all dependacies
+First install all dependencies
 ``` bash
 npm install
 ```
-Then run server
+Then run the server
 ``` bash
 node app.js
 ```
+And enjoy
 
+http://localhost:3001/posts - resource with posts
+http://localhost:3001/comments - resource with comments
