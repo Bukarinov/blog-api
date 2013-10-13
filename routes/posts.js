@@ -1,6 +1,14 @@
 function PostsHandler(app, db) {
     app.get('/posts', function(req, res) {
-        db.all("SELECT * FROM posts", function(err, rows) {
+        var limit = '';
+
+        if (req.query.limit) {
+            limit = " LIMIT $limit";
+        }
+
+        db.all("SELECT * FROM posts" + limit, {
+            $limit: req.query.limit
+        }, function(err, rows) {
             if (err) {
                 return res.json({error: err});
             }
