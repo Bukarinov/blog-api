@@ -11,5 +11,15 @@ node app.js
 ```
 And enjoy
 
-  - http://localhost:3001/posts - resource with posts
-  - http://localhost:3001/comments - resource with comments
+# Resource with posts
+
+Base URL: `/posts`
+
+Params: `id, title, description`
+
+
+# Resource with comments
+
+Base URL: `/comments`
+
+Params: `id, postId, text`
